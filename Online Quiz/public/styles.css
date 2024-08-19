@@ -1,0 +1,11 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid gray;
+    background-color: rgb(229, 229, 229);
+    margin: 100px;
+    padding: 40px;
+};
