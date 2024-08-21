@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+</head>
+<body>
+    <div>
+        <% planetNames.forEach((name, index) => {%>
+            <div style="background-color: black; color: orange; display: inline-block; padding: 20px; font-size: smaller; margin-left: 10px; margin-top: 10px;">
+              <h1>Name: <%= name %></h1>
+              <h2>Terrain: <%= planetTerrains[index] %></h2>
+              <h2>Population: <%= population[index] %> </h2>
+              <h2>Climate: <%= climate[index] %></h2>
+              <h2>How many hours per day: <%= rotationPeriod[index]%></h2>
+            </div>
+          <% }) %>
+    </div>
+</body>
+</html>
