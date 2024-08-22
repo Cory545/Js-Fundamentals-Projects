@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars API</title>
+    <title>Planets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body style="font-family: sans-serif; background: linear-gradient(144deg, rgba(0,9,167,1) 24%, rgba(133,0,22,1) 71%);
+  height: 100vh;">
+
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="./index.ejs" class="nav-link" style="background-color: black; color: yellow; border: 2px solid rgb(148, 148, 0);" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(211, 0, 0); border: 2px solid rgb(107, 0, 0); margin-left: 40px;">Sith</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(0, 234, 255); border: 2px solid rgb(0, 148, 145); margin-left: 40px;">Jedi</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(140, 84, 0); border: 2px solid rgb(148, 94, 0); margin-left: 40px;">Ewoks</a></li>
+      </ul>
+    </header>
+  </div>
+
+
+
+
+<div style="text-align: center; margin-top: 24%;">
     <form action="/submit-list" method="POST">
-        <label for="pet-select">See a random ...</label>
-        <select name="list">
+        <label for="pet-select" style="color: yellow;">See a random ...</label>
+        <select name="list" style="background-color: black; color: yellow; padding: 8px;">
             <option value="">--Please choose an option--</option>
             <option value="World">World</option>
             <option value="Character">Character</option>
         </select>
-        <button type="submit">Show me this list</button>
+        <button type="submit" style="background-color: black; color: yellow; padding: 18px; margin-left: 30px;" >Submit</button>
     </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

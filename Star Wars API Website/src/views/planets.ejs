@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <div>
-        <% planetNames.forEach((name, index) => {%>
-            <div style="background-color: black; color: orange; display: inline-block; padding: 20px; font-size: smaller; margin-left: 10px; margin-top: 10px;">
-              <h1>Name: <%= name %></h1>
-              <h2>Terrain: <%= planetTerrains[index] %></h2>
-              <h2>Population: <%= population[index] %> </h2>
-              <h2>Climate: <%= climate[index] %></h2>
-              <h2>How many hours per day: <%= rotationPeriod[index]%></h2>
-            </div>
-          <% }) %>
+<body style="font-family: sans-serif; background: linear-gradient(144deg, rgba(0,9,167,1) 24%, rgba(133,0,22,1) 71%);
+  height: 100%;">
+
+
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="./index.ejs" class="nav-link" style="background-color: black; color: yellow; border: 2px solid rgb(148, 148, 0);" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(211, 0, 0); border: 2px solid rgb(107, 0, 0); margin-left: 40px;">Sith</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(0, 234, 255); border: 2px solid rgb(0, 148, 145); margin-left: 40px;">Jedi</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(140, 84, 0); border: 2px solid rgb(148, 94, 0); margin-left: 40px;">Ewoks</a></li>
+      </ul>
+    </header>
+  </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-5" style="padding: 40px; text-align: center;">
+      <% planetNames.forEach((name, index) => { %>
+        <div class="col">
+          <div class="card shadow-sm" style="background-color: black; color: yellow; padding-top: 20px; padding-bottom: 70px; border-radius: 10%;">
+            <h1 style="font-weight: 900;"><%= name %></h1>
+            <p class="card-text">
+              <ul style="list-style: none;">
+                <li style="padding-top: 50px;">Terrain: <%= planetTerrains[index] %></li>
+                <li style="padding-top: 30px;">Population: <%= population[index] %></li>
+                <li style="padding-top: 30px;">Climate: <%= climate[index] %></li>
+                <li style="padding-top: 30px;">How many hours per day: <%= rotationPeriod[index]%></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      <% }) %>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

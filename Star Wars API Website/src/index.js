@@ -15,6 +15,9 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
   });
 
+  app.get("/index.ejs", (req, res) => {
+    res.render("index.ejs");
+  });
 
 //When the submit button is pressed, it sends POST.
 app.post('/submit-list', async (req, res) => {

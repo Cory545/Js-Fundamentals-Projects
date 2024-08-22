@@ -6,33 +6,40 @@
     <title>Planets</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body style="    height: 125vh;
-background-image: url('./images/stars.jpg');
-background-size: cover;
-font-family: sans-serif;">
+<body style="font-family: sans-serif; background: linear-gradient(144deg, rgba(0,9,167,1) 24%, rgba(133,0,22,1) 71%);
+  height: 100%;">
+
+
 <div class="container">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="./index.ejs" class="nav-link" style="background-color: black; color: yellow; border: 2px solid rgb(148, 148, 0);" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(211, 0, 0); border: 2px solid rgb(107, 0, 0); margin-left: 40px;">Sith</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(0, 234, 255); border: 2px solid rgb(0, 148, 145); margin-left: 40px;">Jedi</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="background-color: black; color: rgb(140, 84, 0); border: 2px solid rgb(148, 94, 0); margin-left: 40px;">Ewoks</a></li>
       </ul>
     </header>
   </div>
-    <div>
-        <% characterName.forEach((name, index) => {%>
-            <div style="background-color: black; color: orange; display: inline-block; padding: 20px; font-size: smaller; margin-left: 10px; margin-top: 10px;">
-              <h1>Name: <%= name %></h1>
-              <h1>Height(cm): <%= height[index] %></h1>
-              <h1>Mass(kg): <%= mass[index] %></h1>
-              <h1>Hair Colour: <%= hairColour[index] %></h1>
-              <h1>Birth Year: <%= birthYear[index] %></h1>
-              <h1>Sex: <%= gender[index] %></h1>
-            </div>
-          <% }) %>
-    </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-5" style="padding: 40px; text-align: center;">
+    <% characterName.forEach((name, index) => { %>
+      <div class="col">
+        <div class="card shadow-sm" style="background-color: black; color: yellow; padding-top: 20px; padding-bottom: 70px; border-radius: 10%;">
+          <h1 style="font-weight: 900;"><%= name %></h1>
+          <p class="card-text">
+            <ul style="list-style: none;">
+              <li style="padding-top: 50px;">Height(cm): <%= height[index] %></li>
+              <li style="padding-top: 30px;">Mass(kg): <%= mass[index] %></li>
+              <li style="padding-top: 30px;">Birth Year: <%= birthYear[index] %></li>
+              <li style="padding-top: 30px;">Sex: <%= gender[index] %></li>
+              <li style="padding-top: 30px;">Hair Colour: <%= hairColour[index] %></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
