@@ -25,3 +25,10 @@ function game(event){
         return currentScore = 0;
     };
 };
+
+
+
+//Previous ComputersChoice shown.
+//Previous score Shown.
+//Highest Score shown.
+//Make it so the same choice cannot be made twice in a row from the computer
