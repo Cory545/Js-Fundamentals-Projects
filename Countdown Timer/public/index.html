@@ -6,14 +6,15 @@
     <title>CountdownTimer</title>
 </head>
 <body>
-    <div>
+    <div style="background-color: paleturquoise; border: solid 5px black; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <div>
-            <span id="hourDisplay">Hours</span><span minuteDisplay>Minutes</span><span id="secondDisplay">Seconds</span>
+            <h1 id="countdownDisplay"></h1>
         </div>
         <div>
-            <button id="pauseButton">Pause</button>
-            <button id="resetButton">Reset</button>
-            <button id="playButton">Play</button>
+            <button style="background-color: black; color: paleturquoise; padding: 10px;" id="pauseButton" onclick="pauseCountdown()">Pause</button>
+            <button style="background-color: black; color: paleturquoise; padding: 10px;" id="resumeButton" onclick="resumeCountdown()">Resume</button>
+            <button style="background-color: black; color: paleturquoise; padding: 10px;" id="resetButton" onclick="resetCountdown()">Reset</button>
+            <button style="background-color: black; color: paleturquoise; padding: 10px;" id="playButton" onclick="playCountdown()">Play</button>
         </div>
     </div>
 
