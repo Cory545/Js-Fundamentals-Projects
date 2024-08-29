@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
 </head>
-<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+<body>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 3px solid gray; width: fit-content; padding: 30px; box-shadow: 0px 0px 40px 1px black; margin-left: 40%; margin-right: 20%; margin-top: 20%;">
     <h1>Tip Calculator</h1>
-    <label for="priceInput">How much total?</label>
-        <input type="text" id="priceInput">
-        <label for="tipInput">Tip % You wish to leave?</label>
-        <input type="text" id="tipInput">
-        <label for="peopleInput">How many people sharing the bill?</label>
-        <input type="text" id="peopleInput">
-        <button id="button">Calculate Tip</button>
-    <h1 id="display"></h1>
+            <label for="priceInput" style="text-wrap: wrap; margin-top: 16px; margin-bottom: 10px; font-size: 1.5rem;">What is the bill's total?</label>
+            <input type="text" id="priceInput" placeholder="70.00">
+            <label for="tipInput" style="text-wrap: wrap; margin-top: 16px; margin-bottom: 10px; font-size: 1.5rem;">How much of a percent, would you like to leave as a tip?</label>
+            <input type="text" id="tipInput" placeholder="15">
+            <label for="peopleInput" style="text-wrap: wrap; margin-top: 16px; margin-bottom: 10px; font-size: 1.5rem;">How many people are sharing the bill?</label>
+            <input type="text" id="peopleInput" placeholder="1">
+            <button id="button" style="margin-top: 4rem; padding: 16px; color: white; background-color: rgb(0, 128, 255); box-shadow: 0px 0px 6px 1px black; cursor: pointer;" >Calculate Tip</button>
+        <h1 id="display"></h1>
+    </div>
 
 
 
