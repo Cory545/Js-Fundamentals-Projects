@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weight Converter</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Your weight in KG: </h1>
-    <input type="text" id="weightInput">
-    <button id="convertButton">Convert</button>
-    <h1>Your weight in Lbs is: <span id="weightDisplay"></span></h1>
+    <div style="background-color: rgb(136, 0, 186); justify-content: center; display: flex; flex-direction: column; align-items: center; margin: 10%; border: 3px solid rgb(99, 0, 121);">
+        <h1 style="color: white;">Please enter your weight in KG : </h1>
+        <input type="text" id="weightInput" style="margin-bottom: 22px;" placeholder="70">
+        <button id="convertButton" style="padding: 16px; color: rgb(216, 0, 216); background-color: black; border: 1px solid rgb(142, 142, 142); border-radius: 5px; box-shadow: 0px 0px 10px 2px white;">Convert</button>
+        <h1 style="color: white;">Your weight in Lbs is: <span id="weightDisplay" style="color: whitesmoke;"></span></h1>
+    </div>
 
 
 
