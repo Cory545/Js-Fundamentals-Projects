@@ -1,16 +1,16 @@
 // Declaring start variables
-const gameOptions = ["rockButton", "paperButton", "scissorButton"];
+const gameOptions = ["rock", "paper", "scissor"];
 let currentScore = 0;
 // Grabbing each id from the HTML file
-let rockButton = document.getElementById("rockButton");
-let scissorButton = document.getElementById("scissorButton");
-let paperButton = document.getElementById("paperButton");
+let rock = document.getElementById("rock");
+let scissor = document.getElementById("scissor");
+let paper = document.getElementById("paper");
 let scoreShowing = document.getElementById("score");
 let computersChoice = document.getElementById("computersChoice");
 // Adding event listeners to buttons
-rockButton.addEventListener("click", game);
-scissorButton.addEventListener("click", game);
-paperButton.addEventListener("click", game);
+rock.addEventListener("click", game);
+scissor.addEventListener("click", game);
+paper.addEventListener("click", game);
 // Changeing Text
 scoreShowing.innerText = currentScore;
 //The function of Game

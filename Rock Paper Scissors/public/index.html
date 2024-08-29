@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
 </head>
-<body>
-    <h1>Rock Paper Scissors Game</h1>
-    <h2>You score is : <span id="score"> </span> </h2>
-    <p>The game has already begun,  pick one...</p>
-    <button id="rockButton">Rock</button><button id="scissorButton">Scissors</button><button id="paperButton">Paper</button>
-    <h2>The Computer chose : <span id="computersChoice"></span> </h2>
-
+<body style="background-color: black;">
+    <div style="background-color: black; color: white; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column; color: orange;">
+        <h1>Rock Paper Scissors Game</h1>
+        <h2>You score is : <span id="score"> </span> </h2>
+        <p>The game has already begun,  pick one...</p>
+        <div>
+            <button id="rock" style="padding: 16px; border: 1px solid orange; background-color: burlywood; color: black; margin-right: 20px; box-shadow: 0px 0px 5px 3px rgb(129, 129, 129);">Rock</button>
+            <button id="scissor" style="padding: 16px; border: 1px solid orange; background-color: darkolivegreen; color: white; margin-right: 20px;box-shadow: 0px 0px 5px 3px rgb(129, 129, 129);">Scissors</button>
+            <button id="paper" style="padding: 16px; border: 1px solid orange; background-color: rosybrown; color: black; margin-right: 20px;box-shadow: 0px 0px 5px 3px rgb(129, 129, 129);">Paper</button>
+        </div>
+        <h2>The Computer chose : <span id="computersChoice"></span> </h2>
+    </div>
 
     <script src="../src/app.js"></script>
 </body>
