@@ -1,0 +1,16 @@
+#container{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+#container2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 10px;
+    }
+
+body{
+    display: flex;
+}
